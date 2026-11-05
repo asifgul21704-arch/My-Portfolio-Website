@@ -7,7 +7,7 @@ export interface ProjectItem {
   liveUrl?: string;
   githubUrl: string;
   accentColor: string;
-  previewType: 'restaurant' | 'bakery' | 'books' | 'ecommerce' | 'healthcare';
+  previewType: 'restaurant' | 'bakery' | 'books' | 'ecommerce' | 'healthcare' | 'generic';
 }
 
 export interface ServiceItem {
