@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 
 interface ProjectMockupProps {
-  type: 'restaurant' | 'bakery' | 'books' | 'ecommerce' | 'healthcare';
+  type: 'restaurant' | 'bakery' | 'books' | 'ecommerce' | 'healthcare' | 'generic';
   title: string;
 }
 
@@ -221,6 +221,26 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, title }) => 
                 <div className="text-xs font-bold text-white">12</div>
                 <div className="text-[9px] text-neutral-400">Doctors Active</div>
               </div>
+            </div>
+          </div>
+        )}
+        {type === 'generic' && (
+          <div className="h-full flex flex-col justify-between">
+            <div className="flex items-center justify-between pb-2 border-b border-neutral-800/60">
+              <span className="text-xs font-bold text-neutral-100 tracking-wide">{title}</span>
+              <span className="text-[10px] font-mono text-emerald-400">Project Preview</span>
+            </div>
+            <div className="my-auto py-3">
+              <div className="text-lg sm:text-xl font-bold text-white tracking-tight leading-tight">
+                Building <span className="text-emerald-400">useful digital products</span>
+              </div>
+              <div className="text-[11px] text-neutral-400 mt-2">
+                Explore the repository to review the implementation, technologies, and project structure.
+              </div>
+            </div>
+            <div className="flex gap-2 pt-2 border-t border-neutral-800/50">
+              <span className="text-[10px] px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Web Application</span>
+              <span className="text-[10px] px-2.5 py-1 rounded bg-neutral-900 text-neutral-300 border border-neutral-800">Source Code</span>
             </div>
           </div>
         )}
