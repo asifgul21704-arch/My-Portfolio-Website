@@ -17,7 +17,7 @@ export const ProjectsSection: React.FC = () => {
             </p>
           </div>
           <div className="text-xs font-mono text-emerald-600 dark:text-emerald-400">
-            5 Featured Repositories
+            {PROJECTS.length} Projects
           </div>
         </div>
 
